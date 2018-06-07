@@ -1,0 +1,48 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--match parent width wrap content height-->
+    <style name="matchW_wrapH">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- Title Style -->
+    <style name="TitleStyle" parent="matchW_wrapH">
+        <item name="android:textColor">#616161</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">8dp</item>
+    </style>
+
+    <!-- Question Image Style -->
+    <style name="ImageStyle" parent="matchW_wrapH">
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <!-- Question Style -->
+    <style name="questionStyle" parent="matchW_wrapH">
+        <item name="android:textColor">#616161</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_marginBottom">16dp</item>
+    </style>
+
+    <!-- Question Divider -->
+    <style name="Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">?android:attr/listDivider</item>
+        <item name="android:layout_margin">16dp</item>
+    </style>
+
+</resources>

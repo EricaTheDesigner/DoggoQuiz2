@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">DoggoQuiz2</string>
+    <string name="intro">Oh hi human! So you think you know the difference between a doggo and a pupper, a pupper and a woofer, a woofer, and a subwoofer? Scroll down to test your heckin good knowledge fren.</string>
+    <string name="quiz">Quiz</string>
+    <string name="the_official">The Official</string>
+</resources>

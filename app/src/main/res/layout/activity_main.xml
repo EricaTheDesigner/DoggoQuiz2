@@ -27,7 +27,6 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_padding="16dp"
             android:layout_marginTop="24dp"
             android:orientation="horizontal"
             android:background="#e9e9e9">
@@ -68,10 +67,7 @@
             android:text="Our fren is enjoying:" />
 
         <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:orientation="vertical">
+            style="@style/radioStyle">
 
             <RadioButton
                 android:id="@+id/q_one_one"
@@ -95,6 +91,10 @@
         <ImageView
             style="@style/ImageStyle"
             android:src="@drawable/doggo2" />
+
+        <Button
+            style="@style/buttonStyle"
+            android:onClick="showGrade"/>
 
     </LinearLayout>
 

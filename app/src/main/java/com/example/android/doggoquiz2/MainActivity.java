@@ -13,8 +13,8 @@ public class MainActivity extends AppCompatActivity {
 
     //Tracks the quiz grade
     int finalGrade = 0;
-    RadioButton q_one_answer;
-    CheckBox q_two_one, q_two_two, q_two_three;
+    RadioButton q_one_answer, q_four_answer;
+    CheckBox q_two_one, q_two_two, q_two_three, q_five_one, q_five_two, q_five_three;
     String q_three_answer;
 
     @Override
@@ -28,6 +28,10 @@ public class MainActivity extends AppCompatActivity {
         q_two_three = (CheckBox) findViewById(R.id.q_two_three);
         EditText q_three_answer_ed = findViewById(R.id.q_three_floof);
         q_three_answer = q_three_answer_ed.getText().toString();
+        q_four_answer = (RadioButton) findViewById(R.id.q_four_one);
+        q_five_one = (CheckBox) findViewById(R.id.q_five_one);
+        q_five_two = (CheckBox) findViewById(R.id.q_five_two);
+        q_five_three = (CheckBox) findViewById(R.id.q_five_three);
 
     }
 
@@ -39,12 +43,18 @@ public class MainActivity extends AppCompatActivity {
         //Find out if question two is correct
         boolean isTwo = q_two_one.isChecked() && q_two_two.isChecked() && q_two_three.isChecked();
 
-        //Check question three
+        //Check if question three is correct
         boolean isThree = q_three_answer.equalsIgnoreCase("floof");
+
+        //Check if question four is correct
+        boolean isFour = q_four_answer.isChecked();
+
+        //Check if question five is correct
+        boolean isFive = q_five_one.isChecked() && q_five_two.isChecked() && q_five_three.isChecked();
 
 
         //calling score calculation method?
-        finalGrade = tallyQuiz(isOne, isTwo, isThree);
+        finalGrade = tallyQuiz(isOne, isTwo, isThree, isFour, isFive);
 
         //Display Toast message
         Context context = getApplicationContext();
@@ -56,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
 
     //This method is called with submit score is clicked.
 
-    private int tallyQuiz(boolean isOne, boolean isTwo, boolean isThree){
+    private int tallyQuiz(boolean isOne, boolean isTwo, boolean isThree, boolean isFour, boolean isFive){
         //question one radio
         if (q_one_answer.isChecked()) {
             finalGrade = finalGrade + 20;
@@ -67,6 +77,14 @@ public class MainActivity extends AppCompatActivity {
         }
 
         if (q_three_answer.equalsIgnoreCase("floof")) {
+            finalGrade = finalGrade + 20;
+        }
+
+        if (q_four_answer.isChecked()){
+            finalGrade = finalGrade + 20;
+        }
+
+        if (q_five_one.isChecked() && q_five_two.isChecked() && q_five_three.isChecked()){
             finalGrade = finalGrade + 20;
         }
         return finalGrade;

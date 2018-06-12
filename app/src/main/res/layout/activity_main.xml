@@ -146,12 +146,10 @@
                 android:text="@string/q_four_one" />
 
             <RadioButton
-                android:id="@+id/q_four_two"
                 style="@style/wrapW_wrapH"
                 android:text="@string/q_four_two" />
 
             <RadioButton
-                android:id="@+id/q_four_three"
                 style="@style/wrapW_wrapH"
                 android:text="@string/q_four_three" />
         </RadioGroup>

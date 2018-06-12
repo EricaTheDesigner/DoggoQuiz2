@@ -7,8 +7,7 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        style="@style/matchW_wrapH"
         android:orientation="vertical">
 
         <TextView
@@ -64,7 +63,7 @@
         <TextView
             android:id="@+id/q_one"
             style="@style/questionStyle"
-            android:text="Our fren is enjoying:" />
+            android:text="@string/q_one" />
 
         <RadioGroup
             style="@style/radioStyle">
@@ -72,15 +71,15 @@
             <RadioButton
                 android:id="@+id/q_one_one"
                 style="@style/wrapW_wrapH"
-                android:text="A heckin good mlem" />
+                android:text="@string/q_one_one" />
 
             <RadioButton
                 style="@style/wrapW_wrapH"
-                android:text="A heart warming story" />
+                android:text="@string/q_one_wrongtwo" />
 
             <RadioButton
                 style="@style/wrapW_wrapH"
-                android:text="Neither of these" />
+                android:text="@string/q_one_wrongthree" />
         </RadioGroup>
 
         <View style="@style/Divider"/>
@@ -92,22 +91,22 @@
         <TextView
             android:id="@+id/q_two"
             style="@style/questionStyle"
-            android:text="This doggo is a:" />
+            android:text="@string/q_two" />
 
         <CheckBox
             android:id="@+id/q_two_one"
             style="@style/checkboxStyle"
-            android:text="Stylin and profilin longboi" />
+            android:text="@string/q_two_one" />
 
         <CheckBox
             android:id="@+id/q_two_two"
             style="@style/checkboxStyle"
-            android:text="Doe eyed gooboi" />
+            android:text="@string/q_two_two" />
 
         <CheckBox
             android:id="@+id/q_two_three"
             style="@style/checkboxStyle"
-            android:text="Pupper ready for supper" />
+            android:text="@string/q_two_three" />
 
         <View style="@style/Divider" />
 
@@ -118,13 +117,13 @@
         <TextView
             android:id="@+id/q_three"
             style="@style/questionStyle"
-            android:text="STOP! This [woof/floof] needs to see some doggolingo ID." />
+            android:text="@string/q_three" />
 
         <EditText
             android:id="@+id/q_three_floof"
             style="@style/wrapW_wrapH"
             android:layout_marginBottom="16dp"
-            android:hint="Woof or floof?"
+            android:hint="@string/q_threehint"
             android:inputType="textCapWords" />
 
         <View style="@style/Divider" />
@@ -136,22 +135,25 @@
         <TextView
             android:id="@+id/q_four"
             style="@style/questionStyle"
-            android:text="UHOH..." />
+            android:text="@string/q_four" />
 
         <RadioGroup
             style="@style/radioStyle">
 
             <RadioButton
+                android:id="@+id/q_four_one"
                 style="@style/wrapW_wrapH"
-                android:text="Trashboi is at it again!" />
+                android:text="@string/q_four_one" />
 
             <RadioButton
+                android:id="@+id/q_four_two"
                 style="@style/wrapW_wrapH"
-                android:text="Someone did him a frighten." />
+                android:text="@string/q_four_two" />
 
             <RadioButton
+                android:id="@+id/q_four_three"
                 style="@style/wrapW_wrapH"
-                android:text="This woofer ran out of borks to give." />
+                android:text="@string/q_four_three" />
         </RadioGroup>
 
         <View style="@style/Divider" />
@@ -163,27 +165,27 @@
         <TextView
             android:id="@+id/q_five"
             style="@style/questionStyle"
-            android:text="1 smol pupper + 1 woofer = ?" />
+            android:text="@string/q_five" />
 
         <CheckBox
             android:id="@+id/q_five_one"
             style="@style/checkboxStyle"
-            android:text="A woofer and a subwoofer"/>
+            android:text="@string/q_five_one"/>
 
         <CheckBox
             android:id="@+id/q_five_two"
             style="@style/checkboxStyle"
-            android:text="A heckin good team"/>
+            android:text="@string/q_five_two"/>
 
         <CheckBox
             android:id="@+id/q_five_three"
             style="@style/checkboxStyle"
-            android:text="Borktastic cloidbois"/>
+            android:text="@string/q_five_three"/>
 
         <Button
             style="@style/buttonStyle"
             android:onClick="submitQuiz"
-            android:text="submit quiz"/>
+            android:text="@string/submit_button"/>
 
     </LinearLayout>
 

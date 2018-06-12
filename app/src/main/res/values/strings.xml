@@ -3,4 +3,23 @@
     <string name="intro">Oh hi human! So you think you know the difference between a doggo and a pupper, a pupper and a woofer, a woofer, and a subwoofer? Scroll down to test your heckin good knowledge fren.</string>
     <string name="quiz">Quiz</string>
     <string name="the_official">The Official</string>
+    <string name="q_one_one">A heckin good mlem</string>
+    <string name="q_one_wrongtwo">A heart warming story</string>
+    <string name="q_one_wrongthree">Neither of these</string>
+    <string name="q_two">This doggo is a:</string>
+    <string name="q_two_one">Stylin and profilin longboi</string>
+    <string name="q_two_two">Doe eyed gooboi</string>
+    <string name="q_two_three">Pupper ready for supper</string>
+    <string name="q_three">STOP! This [woof/floof] needs to see some doggolingo ID.</string>
+    <string name="q_threehint">Woof or floof?</string>
+    <string name="q_four">UHOH...</string>
+    <string name="q_four_two">Someone did him a frighten.</string>
+    <string name="q_four_one">Trashboi is at it again!</string>
+    <string name="q_four_three">This woofer ran out of borks to give.</string>
+    <string name="q_five">1 smol pupper + 1 woofer = ?</string>
+    <string name="q_five_one">A woofer and a subwoofer</string>
+    <string name="q_five_two">A heckin good team</string>
+    <string name="q_five_three">Borktastic cloidbois</string>
+    <string name="submit_button">submit quiz</string>
+    <string name="q_one">Our fren is enjoying:</string>
 </resources>

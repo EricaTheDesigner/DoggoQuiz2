@@ -71,18 +71,15 @@
 
             <RadioButton
                 android:id="@+id/q_one_one"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/wrapW_wrapH"
                 android:text="A heckin good mlem" />
 
             <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/wrapW_wrapH"
                 android:text="A heart warming story" />
 
             <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/wrapW_wrapH"
                 android:text="Neither of these" />
         </RadioGroup>
 
@@ -92,9 +89,101 @@
             style="@style/ImageStyle"
             android:src="@drawable/doggo2" />
 
+        <TextView
+            android:id="@+id/q_two"
+            style="@style/questionStyle"
+            android:text="This doggo is a:" />
+
+        <CheckBox
+            android:id="@+id/q_two_one"
+            style="@style/checkboxStyle"
+            android:text="Stylin and profilin longboi" />
+
+        <CheckBox
+            android:id="@+id/q_two_two"
+            style="@style/checkboxStyle"
+            android:text="Doe eyed gooboi" />
+
+        <CheckBox
+            android:id="@+id/q_two_three"
+            style="@style/checkboxStyle"
+            android:text="Pupper ready for supper" />
+
+        <View style="@style/Divider" />
+
+        <ImageView
+            style="@style/ImageStyle"
+            android:src="@drawable/doggo3" />
+
+        <TextView
+            android:id="@+id/q_three"
+            style="@style/questionStyle"
+            android:text="STOP! This [woof/floof] needs to see some doggolingo ID." />
+
+        <EditText
+            android:id="@+id/q_three_floof"
+            style="@style/wrapW_wrapH"
+            android:layout_marginBottom="16dp"
+            android:hint="Woof or floof?"
+            android:inputType="textCapWords" />
+
+        <View style="@style/Divider" />
+
+        <ImageView
+            style="@style/ImageStyle"
+            android:src="@drawable/doggo4" />
+
+        <TextView
+            android:id="@+id/q_four"
+            style="@style/questionStyle"
+            android:text="UHOH..." />
+
+        <RadioGroup
+            style="@style/radioStyle">
+
+            <RadioButton
+                style="@style/wrapW_wrapH"
+                android:text="Trashboi is at it again!" />
+
+            <RadioButton
+                style="@style/wrapW_wrapH"
+                android:text="Someone did him a frighten." />
+
+            <RadioButton
+                style="@style/wrapW_wrapH"
+                android:text="This woofer ran out of borks to give." />
+        </RadioGroup>
+
+        <View style="@style/Divider" />
+
+        <ImageView
+            style="@style/ImageStyle"
+            android:src="@drawable/doggo5" />
+
+        <TextView
+            android:id="@+id/q_five"
+            style="@style/questionStyle"
+            android:text="1 smol pupper + 1 woofer = ?" />
+
+        <CheckBox
+            android:id="@+id/q_five_one"
+            style="@style/checkboxStyle"
+            android:text="A woofer and a subwoofer"/>
+
+        <CheckBox
+            android:id="@+id/q_five_two"
+            style="@style/checkboxStyle"
+            android:text="A heckin good team"/>
+
+        <CheckBox
+            android:id="@+id/q_five_three"
+            style="@style/checkboxStyle"
+            android:text="Borktastic cloidbois"/>
+
         <Button
             style="@style/buttonStyle"
-            android:onClick="showGrade"/>
+            android:onClick="submitQuiz"
+            android:text="submit quiz"/>
 
     </LinearLayout>
 

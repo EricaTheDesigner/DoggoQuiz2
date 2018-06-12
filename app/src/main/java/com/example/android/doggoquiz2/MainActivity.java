@@ -9,38 +9,36 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    RadioButton q_one_radiobutton;
+    //Tracks the quiz grade
+    int finalGrade = 0;
+    RadioButton q_one_answer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        RadioButton q_one_answer = (RadioButton) findViewById(R.id.q_one_one);
+        q_one_answer = (RadioButton) findViewById(R.id.q_one_one);
     }
 
-    //Tracks the quiz grade
-    int finalGrade = 0;
 
-    //Question One
+    //This method is called with submit score is clicked.
 
-    private boolean question_one() {
-
-        //QUESTION ONE
-        RadioButton q_one_answer = (RadioButton) findViewById(R.id.q_one_one);
+    private int tallyQuiz(View view){
+        //question one radio
         if (q_one_answer.isChecked()) {
             finalGrade = finalGrade + 20;
         }
-        return false;
+        return finalGrade;
     }
 
-
-//        public void showGrade(View v) {
-//            Context context = getApplicationContext();
-//            CharSequence text = "You Scored " + finalGrade + "%";
-//            int duration = Toast.LENGTH_LONG;
-//            Toast toast = Toast.makeText(context, text, duration);
-//            toast.show();
-//        }
+    public void submitQuiz(View view){
+        //Toast message
+        Context context = getApplicationContext();
+        CharSequence text = "You Scored " + finalGrade + "%";
+        int duration = Toast.LENGTH_LONG;
+        Toast toast = Toast.makeText(context, text, duration);
+        toast.show();
+    }
 
 }

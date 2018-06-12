@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         //calling score calculation method?
-        int finalGrade = tallyQuiz(isOne, isTwo, isThree);
+        finalGrade = tallyQuiz(isOne, isTwo, isThree);
 
         //Display Toast message
         Context context = getApplicationContext();

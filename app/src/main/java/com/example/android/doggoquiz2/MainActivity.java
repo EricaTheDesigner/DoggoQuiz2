@@ -57,11 +57,20 @@ public class MainActivity extends AppCompatActivity {
         finalGrade = tallyQuiz(isOne, isTwo, isThree, isFour, isFive);
 
         //Display Toast message
-        Context context = getApplicationContext();
-        CharSequence text = "You Scored " + finalGrade + "%";
-        int duration = Toast.LENGTH_LONG;
-        Toast toast = Toast.makeText(context, text, duration);
-        toast.show();
+        if(finalGrade == 0){
+            Context context = getApplicationContext();
+            CharSequence text = "THE DOGGO ATE YOUR HOMEWORK " + finalGrade + "%";
+            int duration = Toast.LENGTH_LONG;
+            Toast toast = Toast.makeText(context, text, duration);
+            toast.show();
+
+        } else{
+            Context context = getApplicationContext();
+            CharSequence text = "You Scored " + finalGrade + "%";
+            int duration = Toast.LENGTH_LONG;
+            Toast toast = Toast.makeText(context, text, duration);
+            toast.show();
+        }
     }
 
     //This method is called with submit score is clicked.

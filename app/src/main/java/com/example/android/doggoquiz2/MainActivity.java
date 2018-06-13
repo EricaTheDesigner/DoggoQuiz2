@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         q_two_three = (CheckBox) findViewById(R.id.q_two_three);
         EditText q_three_answer_ed = findViewById(R.id.q_three_floof);
         q_three_answer = q_three_answer_ed.getText().toString();
-        q_four_answer = (RadioButton) findViewById(R.id.q_four_one);
+        q_four_answer = (RadioButton) findViewById(R.id.q_four);
         q_five_one = (CheckBox) findViewById(R.id.q_five_one);
         q_five_two = (CheckBox) findViewById(R.id.q_five_two);
         q_five_three = (CheckBox) findViewById(R.id.q_five_three);

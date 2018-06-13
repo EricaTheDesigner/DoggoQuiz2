@@ -133,7 +133,6 @@
             android:src="@drawable/doggo4" />
 
         <TextView
-            android:id="@+id/q_four"
             style="@style/questionStyle"
             android:text="@string/q_four" />
 
@@ -141,7 +140,7 @@
             style="@style/radioStyle">
 
             <RadioButton
-                android:id="@+id/q_four_one"
+                android:id="@+id/q_four"
                 style="@style/wrapW_wrapH"
                 android:text="@string/q_four_one" />
 

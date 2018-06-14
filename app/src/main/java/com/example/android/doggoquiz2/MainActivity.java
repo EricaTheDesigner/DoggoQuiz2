@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         q_two_two = (CheckBox) findViewById(R.id.q_two_two);
         q_two_three = (CheckBox) findViewById(R.id.q_two_three);
         EditText q_three_answer_ed = findViewById(R.id.q_three_floof);
-        q_three_answer = q_three_answer_ed.getText().toString();
+        q_three_answer = q_three_answer_ed.getText().toString().trim();
         q_four_answer = (RadioButton) findViewById(R.id.q_four);
         q_five_one = (CheckBox) findViewById(R.id.q_five_one);
         q_five_two = (CheckBox) findViewById(R.id.q_five_two);
@@ -76,25 +76,26 @@ public class MainActivity extends AppCompatActivity {
     //This method is called with submit score is clicked.
 
     private int tallyQuiz(boolean isOne, boolean isTwo, boolean isThree, boolean isFour, boolean isFive){
+        finalGrade = 0;
         //question one radio
         if (q_one_answer.isChecked()) {
-            finalGrade = finalGrade + 20;
+            finalGrade += 20;
         }
 
         if (q_two_one.isChecked() && q_two_two.isChecked() && q_two_three.isChecked()){
-            finalGrade = finalGrade + 20;
+            finalGrade += 20;
         }
 
         if (q_three_answer.equalsIgnoreCase("floof")) {
-            finalGrade = finalGrade + 20;
+            finalGrade += 20;
         }
 
         if (q_four_answer.isChecked()){
-            finalGrade = finalGrade + 20;
+            finalGrade += 20;
         }
 
         if (q_five_one.isChecked() && q_five_two.isChecked() && q_five_three.isChecked()){
-            finalGrade = finalGrade + 20;
+            finalGrade += 20;
         }
         return finalGrade;
     }
